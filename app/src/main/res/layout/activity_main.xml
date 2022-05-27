@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <com.tutorialsbuzz.androidcircularimage.CirleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/user_dp"/>
+
+    <com.tutorialsbuzz.androidcircularimage.CirleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:civ_border_color="@android:color/holo_blue_dark"
+            app:civ_border_width="10dp"
+            android:src="@drawable/user_dp"/>
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_background"
+            android:padding="10dp">
+
+        <com.tutorialsbuzz.androidcircularimage.CirleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/user_dp"/>
+    </FrameLayout>
+
+</LinearLayout>
